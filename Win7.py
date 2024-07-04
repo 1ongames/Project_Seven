@@ -43,7 +43,7 @@ class Windows7Mockup:
         # 배경 이미지 불러오기
         self.canvas.create_image(0, 0, anchor="nw", image=self.bg_image)
   
-    def create_taskbar(self):
+        def create_taskbar(self):
         # Win7 Aero 작업표시줄은 구현 불가로 반투명 제거.
         taskbar_color = "#A7C1DC"
         self.taskbar = tk.Frame(self.root, bg=taskbar_color, height=40)
